@@ -1,0 +1,22 @@
+{
+  "name": "Scboloo",
+  "description": "easy way to post webpage to scrapbox.io",
+  "author": "pastak",
+  "version": "0.0.1",
+  "permissions": [
+    "<all_urls>",
+    "activeTab",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://supporterz.jp/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["main.js"],
+    "persistent": false
+  },
+  "manifest_version": 2
+}
