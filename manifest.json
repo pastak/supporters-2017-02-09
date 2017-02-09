@@ -1,12 +1,13 @@
 {
-  "name": "Scboloo",
-  "description": "easy way to post webpage to scrapbox.io",
+  "name": "Supporterzを便利にするやつ",
+  "description": "Supporterzを便利にするやつ",
   "author": "pastak",
   "version": "0.0.1",
   "permissions": [
     "<all_urls>",
     "activeTab",
-    "tabs"
+    "tabs",
+    "contextMenus"
   ],
   "content_scripts": [
     {
@@ -18,5 +19,6 @@
     "scripts": ["main.js"],
     "persistent": false
   },
+  "browser_action": {},
   "manifest_version": 2
 }
